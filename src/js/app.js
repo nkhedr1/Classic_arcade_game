@@ -4,7 +4,7 @@ let highestScore = 1;
 var Enemy = function(x, y) {
     this.x = x;
     this.y = y;
-    this.sprite = 'images/enemy-bug.png';
+    this.sprite = 'src/images/enemy-bug.png';
 };
 
 Enemy.prototype.update = function(dt) {
@@ -26,7 +26,7 @@ Enemy.prototype.render = function() {
 function Player(x, y) {
   this.x = x;
   this.y = y;
-  this.sprite = 'images/char-pink-girl.png';  
+  this.sprite = 'src/images/char-pink-girl.png';  
 }
 
 Player.prototype.update = function(dt) {
