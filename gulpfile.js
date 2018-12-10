@@ -13,9 +13,19 @@ gulp.task('autoprefixer', () =>
 );
 
 const imagemin = require('gulp-imagemin');
- 
+
 gulp.task('imagemin', () =>
     gulp.src('src/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
+);
+
+const babel = require('gulp-babel');
+
+gulp.task('babel', () =>
+    gulp.src('src/js/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('dist/js'))
 );
