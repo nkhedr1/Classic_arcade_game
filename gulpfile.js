@@ -9,5 +9,13 @@ gulp.task('autoprefixer', () =>
             cascade: false
         }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/css'))
+);
+
+const imagemin = require('gulp-imagemin');
+ 
+gulp.task('imagemin', () =>
+    gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
 );
