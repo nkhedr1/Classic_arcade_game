@@ -1,0 +1,24 @@
+{
+  "name": "classic_arcade_game",
+  "version": "1.0.0",
+  "description": "- [Instructions](#instructions)\r - [Contributing](#contributing)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkhedr1/Classic_arcade_game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkhedr1/Classic_arcade_game/issues"
+  },
+  "homepage": "https://github.com/nkhedr1/Classic_arcade_game#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0"
+  }
+}
